@@ -227,3 +227,351 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
+/* Styles pour la page Contact */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+    gap: 4rem;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact-info h2::after {
+    margin: 1rem 0; /* Aligne la ligne décorative à gauche */
+}
+
+.info-item {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--gris-tres-fonce);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-apps {
+    display: flex;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.social-apps a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+.social-apps a:hover {
+    opacity: 0.8;
+}
+
+/* Style du Formulaire */
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease both;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gris-tres-fonce);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: var(--violet-doux);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+    .social-apps {
+        flex-direction: column;
+    }
+}
+
+.projects {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 3rem;
+}
+
+/* GRID 3 PAR 3 */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease both;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* TITRE */
+.card h3 {
+    margin: 15px 10px 5px;
+    color: var(--gris-trés-foncé);
+}
+
+/* TEXTE */
+.card p {
+    margin: 0 10px;
+    color: var(--gris-foncé);
+    font-size: 0.95rem;
+}
+
+/* TAGS */
+.tags {
+    padding: 10px;
+}
+
+.tags span {
+    background-color: var(--gris-clair);
+    padding: 5px 10px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    display: inline-block;
+}
+
+/* ACTIONS */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* BOUTONS */
+.actions button {
+    border: none;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.actions button:hover {
+    background-color: var(--violet-foncé);
+    transform: translateY(-2px);
+}
+
+
+.divertissement {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.divertissement h2 {
+    margin-bottom: 3rem;
+    color: var(--violet-doux);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.divertissement-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.divertissement-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease both;
+}
+
+.divertissement-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.divertissement-card h3 {
+    margin: 15px 10px 5px;
+    color: var(--gris-trés-foncé);
+    font-size: 1.4rem;
+}
+
+.divertissement-card p {
+    margin: 0 10px 15px;
+    color: var(--gris-foncé);
+    font-size: 1rem;
+}
+
+.divertissement-tags span {
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.divertissement-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================== */
+/* PASSIONS */
+/* ===================== */
+.passions {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.passions h2 {
+    margin-bottom: 3rem;
+    color: var(--violet-doux);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.passions-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.passions-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease both;
+}
+
+.passions-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.passions-card h3 {
+    margin: 15px 10px 5px;
+    color: var(--gris-trés-foncé);
+    font-size: 1.4rem;
+}
+
+.passions-card p {
+    margin: 0 10px 15px;
+    color: var(--gris-foncé);
+    font-size: 1rem;
+}
+
+.passions-tags span {
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.passions-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

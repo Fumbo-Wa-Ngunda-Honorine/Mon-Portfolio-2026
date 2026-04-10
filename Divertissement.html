@@ -1,40 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon portfolio</title>
+    <title>Divertissement - Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
 </head>
 <body>
- <header>
-        <div>
-            <a href="">Mon portfolio</a>
+<header>
+    <div><a href="index.html">Mon portfolio</a></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Projets.html">Projets</a></li>
+            <li><a href="Passions.html">Passions</a></li>
+            <li><a href="Divertissement.html" class="active">Divertissement</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="divertissement">
+    <h2>Mes Divertissements</h2>
+    <div class="divertissement-cards">
+        <div class="divertissement-card">
+            <img src="image/afro.jpg" alt="Musique Pop RnB Danse">
+            <h3>Musique</h3>
+            <p>J’aime écouter du Pop, du RnB et danser pour me libérer et m’exprimer.</p>
+            <div class="divertissement-tags"><span>Pop</span><span>RnB</span><span>Danse</span></div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Projets.html">Projets</a></li>
-                <li><a href="Passions.html">Passions</a></li>
-                <li><a href="Divertissement.html"class="active">Divertissement</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
- <main>
-    <h1>Voici mes Divertissement</h1>
- </main>
-    <footer>
-        <p>&copy; 2026 HONORINE. Tous droits réservés.</p>
-        <div>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
+        <div class="divertissement-card">
+            <img src="image/cine.jpg" alt="Cinéma Romance Voyages">
+            <h3>Cinéma</h3>
+            <p>Les films romantiques et les documentaires de voyage nourrissent mon imagination.</p>
+            <div class="divertissement-tags"><span>Romance</span><span>Voyages</span></div>
         </div>
-    </footer>   
+        <div class="divertissement-card">
+            <img src="image/foot.jpg" alt="Sport Yoga Fitness">
+            <h3>Sport</h3>
+            <p> le foot m’aide à garder l’équilibre entre corps et esprit.</p>
+            <div class="divertissement-tags"><span>Yoga</span><span>Fitness</span></div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <p>&copy; 2026 HONORINE. Tous droits réservés.</p>
+    <div>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+</footer>
 </body>
 </html>
